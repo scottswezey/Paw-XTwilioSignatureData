@@ -15,6 +15,7 @@ This extension for [Paw](https://paw.cloud) assists you in generating the  `X-Tw
 1. Add a new header with the name `X-Twilio-Signature`.
 1. In the header value, choose `HMAC-SHA1`. The input will be `X-Twilio-Signature-Data`, the key should be your Twilio `AuthToken` or a subsitute used for testing webhooks. Be wary of using your actual Twilio production credentials.
 1. Leave Algorithm set to `HMAC-SHA1` and Encoding set to `Base64`
+1. Ensure irrelevant fields are not included in the request. (Ex `MessageServiceSid` when not emulating a messaging service.) Such fields would be used in the signature calculation and thus incorrectly emulate Twilio's actual webhooks.
 1. Preview the request to ensure the signature is added.
 
 ## Relevant Twilio Docs
