@@ -2,8 +2,14 @@
 
 ## Version 1.0.0 (not yet released)
 
-* Further use and testing needed to ensure this works exactly as it should in every case.
-* Further use and testing needed to ensure this is easy to use.
+* Needs automated tests
+* Needs better integration with Paw.
+
+## Version 0.0.3
+
+* Jan 14, 2020
+* Fixes URL encoding bug
+* To the best of my knowledge, this now matches Twilio's calcualtion of the `X-Twilio-Signature` header.
 
 ## Version 0.0.2
 

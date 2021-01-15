@@ -1,4 +1,4 @@
-# XTwilioSignatureData (Version 0.0.2)
+# XTwilioSignatureData (Version 0.0.3)
 
 This extension for [Paw](https://paw.cloud) assists you in generating the  `X-Twilio-Signature` header by sorting the body/form data from your request and appending it to the request URL, [as documented by Twilio](https://www.twilio.com/docs/usage/security#validating-requests).
 
