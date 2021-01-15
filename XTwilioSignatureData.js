@@ -1,8 +1,11 @@
 var XTwilioSignatureData = function () {
 
   this.evaluate = function (context) {
-    var req = context.getCurrentRequest();
-    var data = req.body.split('&').map(entry => entry.split('=').join('')).sort().join('');
+    const req = context.getCurrentRequest();
+    const data = req.body.split('&').map(param =>
+      param.split('=').join('')
+    )
+      .sort().join('');
 
     return req.url.concat('', data);
   }
